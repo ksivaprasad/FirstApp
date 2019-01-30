@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">First App</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="welcome">Welcome</string>
+    <string name="pref_file">com.example.user.preference_file</string>
+    <string name="pref_login_status">com.example.user.preference_login_status</string>
+    <string name="prefence_user_name">com.example.user.preference_user_name</string>
+</resources>
