@@ -6,4 +6,9 @@
     <string name="pref_file">com.example.user.preference_file</string>
     <string name="pref_login_status">com.example.user.preference_login_status</string>
     <string name="prefence_user_name">com.example.user.preference_user_name</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<DefaultResponse> call, Response<DefaultResponse> response) {
                 if(response.body().getStatus().equals("success")){
-                    Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                    Intent intent = new Intent(LoginActivity.this,LandingActivity.class);
                     startActivity(intent);
                 }
                 else if(response.body().getStatus().equals("failure")){
