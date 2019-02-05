@@ -46,7 +46,9 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate(userName.getText().toString(), password.getText().toString());
+                Intent intent = new Intent(LoginActivity.this,LandingActivity.class);
+                startActivity(intent);
+                //validate(userName.getText().toString(), password.getText().toString());
             }
         });
 

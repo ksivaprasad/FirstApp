@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -18,19 +19,23 @@ public class LandingActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
+            ActionBar actionBar = getSupportActionBar();
             Fragment selected = null;
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    actionBar.show();
                     selected = new Fragment1();
                     break;
                 case R.id.navigation_search:
+                    actionBar.hide();
                     selected = new Fragment2();
                     break;
                 case R.id.navigation_dashboard:
+                    actionBar.show();
                     selected = new Fragment2();
                     break;
                 case R.id.navigation_notifications:
+                    actionBar.show();
                     selected = new Fragment3();
                     break;
             }
